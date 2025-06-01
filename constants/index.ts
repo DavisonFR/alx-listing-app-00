@@ -1,11 +1,24 @@
-export const API_URL = "https://api.example.com"; // Placeholder API URL
+import { PropertyProps } from "@/interfaces";
 
-export const DEFAULT_CARD_CONTENT = {
-  title: "Cozy Apartment in City Center",
-  description: "A beautiful modern apartment located in the heart of downtown.",
-};
-
-export const BUTTON_LABELS = {
-  bookNow: "Book Now",
-  details: "View Details",
-};
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
+  {
+    name: "Villa Ocean Breeze",
+    address: { state: "Seminyak", city: "Bali", country: "Indonesia" },
+    rating: 4.89,
+    category: ["Luxury Villa", "Pool", "Free Parking"],
+    price: 3200,
+    offers: { bed: "3", shower: "3", occupants: "4-6" },
+    image: "/assets/property1.jpg",  // ✅ Updated path
+    discount: ""
+  },
+  {
+    name: "Mountain Escape Chalet",
+    address: { state: "Aspen", city: "Colorado", country: "USA" },
+    rating: 4.70,
+    category: ["Mountain View", "Fireplace", "Self Checkin"],
+    price: 1800,
+    offers: { bed: "4", shower: "2", occupants: "5-7" },
+    image: "/assets/property2.jpg",  // ✅ Updated path
+    discount: "30"
+  },
+];
