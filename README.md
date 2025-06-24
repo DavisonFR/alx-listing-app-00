@@ -1,60 +1,87 @@
-# ALX Listing App 🚀  
+# 🚀 ALX Listing App
 
-## **Project Overview**
-The ALX Listing App is a foundational project for building an Airbnb-style listing platform. This milestone focuses on establishing a **scalable**, **maintainable**, and **performance-optimized** codebase using:  
-✅ **Next.js** for server-side rendering and static site generation  
-✅ **TypeScript** for type safety and code maintainability  
-✅ **TailwindCSS** for rapid styling and responsive design  
-✅ **ESLint & Prettier** for consistent and clean code formatting  
+An elegant, scalable foundation for an Airbnb-style property listing platform. Built using modern web technologies and clean, maintainable architecture.
 
 ---
 
-## **Getting Started**  
-Follow these steps to set up and run the project.  
+## 🧭 Project Overview
 
-### 1️⃣ Clone the Repository  
+This milestone focuses on establishing a **scalable**, **maintainable**, and **performance-optimized** codebase using:
+
+- ✅ **Next.js** for server-side rendering & static site generation  
+- ✅ **TypeScript** for type safety and code confidence  
+- ✅ **Tailwind CSS** for responsive, utility-first design  
+- ✅ **ESLint & Prettier** for consistent code formatting
+
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to set up and run the project locally:
+
+### 1️⃣ Clone the Repository
+
 ```bash
-git clone https://github.com/DavisonFR/alx-listing-app.git
-cd alx-listing-app
+git clone https://github.com/DavisonFR/alx-listing-app-00.git
+cd alx-listing-app-00
 npm install
 npm run dev
-Open http://localhost:3000 in your browser to view the app.
+Visit http://localhost:3000 in your browser.
 
-4️⃣ Modify Components & Pages
-Edit pages/index.tsx to update the homepage. The page auto-updates with changes.
+2️⃣ Modify Components & Pages
+Edit files like pages/index.tsx, components/, and constants/ to customize the layout and data.
 
-5️⃣ API Routes
-✅ http://localhost:3000/api/hello → Example API route Modify pages/api/hello.ts to adjust backend functionality.
-## **Project Folder Structure**
-alx-listing-app/
+3️⃣ API Routes
+Try the sample route:
+
+bash
+http://localhost:3000/api/hello
+Feel free to update pages/api/hello.ts to adjust backend behavior.
+
+🗂 Project Structure
+alx-listing-app-00/
 ├── components/
-│   ├── common/
-│   │   ├── Card.tsx
-│   │   ├── Button.tsx
-├── interfaces/
-│   ├── index.ts
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   └── Layout.tsx
+│   ├── Pill.tsx
+│   └── PropertyCard.tsx
 ├── constants/
-│   ├── index.ts
-├── public/
-│   ├── assets/
-│   │   ├── placeholder.jpg
-│   │   ├── icons.svg
-├── styles/
-│   ├── globals.css
+│   └── index.ts
+├── interfaces/
+│   └── index.ts
 ├── pages/
 │   ├── index.tsx
-│   ├── api/
-│   │   ├── hello.ts
+│   ├── _app.tsx
+│   └── api/
+│       └── hello.ts
+├── public/
+│   └── assets/
+│       └── bg.jpg
+├── styles/
+│   └── globals.css
 ├── README.md
-## **Key Features**  
-- 🏡 **Dynamic property listings**  
-- ⚡ **Fast rendering with Next.js SSR**  
-- 📱 **Responsive design using TailwindCSS**  
-- 🔒 **Secure API integration**  
-- ⚙️ **Reusable UI components (e.g., `Card.tsx`, `Button.tsx`)**  
-## **Future Improvements**  
-🚀 **Upcoming development milestones** for the ALX Listing App:  
-- 🔄 **Connect to a database** for real estate listings  
-- 🌍 **Geo-location based search for properties**  
-- 🔑 **User authentication with NextAuth.js**  
-- 📊 **Enhanced UI components for filters & pricing**  
+✨ Key Features
+🏡 Dynamic property listings from sample dataset
+
+💊 Filter pills that dynamically update listings
+
+⚙️ Reusable UI components (PropertyCard, Pill, Layout)
+
+📱 Mobile-first design with Tailwind CSS
+
+⚡ Optimized rendering using Next.js
+
+🔮 Future Improvements
+Planned enhancements to power this platform forward:
+
+🔄 Database integration for real property listings
+
+🔑 Authentication with NextAuth.js
+
+🌍 Geo-location search
+
+📊 Advanced filters and price sorting
+
+☁️ Deployment via Vercel or GitHub Pages
